@@ -714,11 +714,22 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 # if (file_exists(__DIR__ . '/settings.local.php')) {
 #   include __DIR__ . '/settings.local.php';
 # }
-$databases['default']['default'] = array (
-  'database' => 'sites/default/files/.ht.sqlite',
-  'prefix' => '',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
-  'driver' => 'sqlite',
+$db = parse_url($_ENV["CLEARDB_DATABASE_URL"]); 
+$databases = array (
+  'default' => 
+  array (
+    'default' => 
+    array (
+      'database' => trim($db["path"],"/"),
+      'username' => $db["user"],
+      'password' => $db["pass"],
+      'host' => $db["host"],
+      'port' => '3306',
+    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_be_XNZo3Jeb_Q3SdvXf37WzKATAjCBglo3dPwZpObxMyCwDPPLGMvzyMH7qWCtkUcuaHUtBS0g/sync';
