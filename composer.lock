@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b098c56bb5c870996c333488d9da14e4",
-    "content-hash": "f66246149a29b6888bbe75cf220fe7ea",
+    "hash": "4ebd6795b9b7502d39f97885662f4e5c",
+    "content-hash": "be70d736c65ff26827a4535e3dc639cc",
     "packages": [
         {
             "name": "composer/installers",
@@ -858,50 +858,6 @@
                 "uri"
             ],
             "time": "2016-06-24 23:00:38"
-        },
-        {
-            "name": "heroku/heroku-buildpack-php",
-            "version": "v110",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "b5c4a0b77a725c4ab9dc1736e5a8217824790093"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/b5c4a0b77a725c4ab9dc1736e5a8217824790093",
-                "reference": "b5c4a0b77a725c4ab9dc1736e5a8217824790093",
-                "shasum": ""
-            },
-            "bin": [
-                "bin/heroku-hhvm-apache2",
-                "bin/heroku-hhvm-nginx",
-                "bin/heroku-php-apache2",
-                "bin/heroku-php-nginx"
-            ],
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "David Zuelke",
-                    "email": "dz@heroku.com"
-                }
-            ],
-            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
-            "homepage": "https://github.com/heroku/heroku-buildpack-php",
-            "keywords": [
-                "apache",
-                "apache2",
-                "foreman",
-                "heroku",
-                "hhvm",
-                "nginx",
-                "php"
-            ],
-            "time": "2016-08-26 14:02:29"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -2978,6 +2934,50 @@
                 "scraper"
             ],
             "time": "2015-11-05 12:58:44"
+        },
+        {
+            "name": "heroku/heroku-buildpack-php",
+            "version": "v110",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heroku/heroku-buildpack-php.git",
+                "reference": "b5c4a0b77a725c4ab9dc1736e5a8217824790093"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/b5c4a0b77a725c4ab9dc1736e5a8217824790093",
+                "reference": "b5c4a0b77a725c4ab9dc1736e5a8217824790093",
+                "shasum": ""
+            },
+            "bin": [
+                "bin/heroku-hhvm-apache2",
+                "bin/heroku-hhvm-nginx",
+                "bin/heroku-php-apache2",
+                "bin/heroku-php-nginx"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Zuelke",
+                    "email": "dz@heroku.com"
+                }
+            ],
+            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
+            "homepage": "https://github.com/heroku/heroku-buildpack-php",
+            "keywords": [
+                "apache",
+                "apache2",
+                "foreman",
+                "heroku",
+                "hhvm",
+                "nginx",
+                "php"
+            ],
+            "time": "2016-08-26 14:02:29"
         },
         {
             "name": "jcalderonzumba/gastonjs",
